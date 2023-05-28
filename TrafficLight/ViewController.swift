@@ -60,8 +60,6 @@ class ViewController: UIViewController {
             yellowSection.alpha = lightIsOff
             currentColor = .red
         }
-        
     }
-    
 }
 

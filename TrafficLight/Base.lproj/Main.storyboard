@@ -17,36 +17,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="EXA-N3-3vc">
-                                <rect key="frame" x="147.33333333333331" y="88.999999999999972" width="135.33333333333331" height="503.33333333333326"/>
+                                <rect key="frame" x="146.66666666666669" y="89" width="136.66666666666669" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BpG-qV-d30">
-                                        <rect key="frame" x="0.0" y="0.0" width="135.33333333333334" height="138.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="136.66666666666666" height="138.66666666666666"/>
                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="BpG-qV-d30" secondAttribute="height" multiplier="68:69" id="KwK-QC-WoR"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWL-dK-SkY">
-                                        <rect key="frame" x="0.0" y="182.33333333333331" width="135.33333333333334" height="138.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="182.66666666666669" width="136.66666666666666" height="138.66666666666669"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9M3-gB-2yL">
-                                        <rect key="frame" x="0.0" y="364.66666666666669" width="135.33333333333334" height="138.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="365.33333333333331" width="136.66666666666666" height="138.66666666666669"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="EXA-N3-3vc" secondAttribute="height" multiplier="31:115" id="0Za-ax-2BQ"/>
-                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLC-pu-jcQ">
-                                <rect key="frame" x="148.66666666666669" y="764" width="132.66666666666669" height="49"/>
+                                <rect key="frame" x="148.66666666666669" y="804" width="132.66666666666669" height="47"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="132.66666666666663" id="KfE-cG-etv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="132.66666666666669" id="4pZ-C8-37R"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="button">
-                                    <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="colorChangeButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="YcL-rB-Jvp"/>
                                 </connections>
@@ -55,11 +55,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
-                            <constraint firstItem="EXA-N3-3vc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.539906" id="4rl-fG-VNm"/>
-                            <constraint firstItem="BLC-pu-jcQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="B5o-p4-i4C"/>
-                            <constraint firstItem="EXA-N3-3vc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="esy-a9-QKq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BLC-pu-jcQ" secondAttribute="bottom" constant="85" id="v7Q-Cf-lpW"/>
-                            <constraint firstItem="EXA-N3-3vc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="x1M-jH-dJ4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BLC-pu-jcQ" secondAttribute="bottom" constant="47" id="Ae2-Ao-WDs"/>
+                            <constraint firstItem="EXA-N3-3vc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.540773" id="Dy0-uB-qXn"/>
+                            <constraint firstItem="EXA-N3-3vc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MQS-Uo-fxx"/>
+                            <constraint firstItem="BLC-pu-jcQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="b7O-Ms-DAe"/>
+                            <constraint firstItem="BpG-qV-d30" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="g8b-Qv-wga"/>
                         </constraints>
                     </view>
                     <connections>
