@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         colorChangeButton.layer.cornerRadius = 12
+        colorChangeButton.setTitle("START", for: .normal)
         
         redSection.layer.cornerRadius = 60
         yellowSection.layer.cornerRadius = 60
@@ -41,7 +42,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func colorChangeButtonDidTapped() {
-        colorChangeButton.setTitle("NEXT", for: .normal)
+        if colorChangeButton.currentTitle == "START" {
+            colorChangeButton.setTitle("NEXT", for: .normal)
+        }
         
         switch currentColor {
         case .red:
