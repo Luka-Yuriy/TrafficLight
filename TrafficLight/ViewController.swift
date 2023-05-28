@@ -14,6 +14,7 @@ enum CurrentColor {
 }
 
 class ViewController: UIViewController {
+    
     @IBOutlet var redSection: UIView!
     @IBOutlet var yellowSection: UIView!
     @IBOutlet var greenSection: UIView!
@@ -45,16 +46,16 @@ class ViewController: UIViewController {
         switch currentColor {
         case .red:
             redSection.alpha = lightIsON
-            yellowSection.alpha = lightIsOff
             greenSection.alpha = lightIsOff
+            currentColor = .yellow
         case .yellow:
-            redSection.alpha = lightIsOff
             yellowSection.alpha = lightIsON
-            greenSection.alpha = lightIsOff
-        case .green:
             redSection.alpha = lightIsOff
-            yellowSection.alpha = lightIsOff
+            currentColor = .green
+        case .green:
             greenSection.alpha = lightIsON
+            yellowSection.alpha = lightIsOff
+            currentColor = .red
         }
         
     }
