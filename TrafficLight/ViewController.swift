@@ -9,9 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var redSection: UIView!
-    @IBOutlet var yellowSection: UIView!
-    @IBOutlet var greenSection: UIView!
+    @IBOutlet var redView: UIView!
+    @IBOutlet var yellowView: UIView!
+    @IBOutlet var greenView: UIView!
     
     @IBOutlet var colorChangeButton: UIButton!
     
@@ -21,18 +21,18 @@ class ViewController: UIViewController {
     private var currentLight: CurrentLight = .red
     
     override func viewWillLayoutSubviews() {
-        redSection.layer.cornerRadius = redSection.frame.width / 2
-        yellowSection.layer.cornerRadius = redSection.frame.width / 2
-        greenSection.layer.cornerRadius = redSection.frame.width / 2
+        redView.layer.cornerRadius = redView.frame.width / 2
+        yellowView.layer.cornerRadius = redView.frame.width / 2
+        greenView.layer.cornerRadius = redView.frame.width / 2
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         colorChangeButton.layer.cornerRadius = 16
         
-        redSection.alpha = lightIsOff
-        yellowSection.alpha = lightIsOff
-        greenSection.alpha = lightIsOff
+        redView.alpha = lightIsOff
+        yellowView.alpha = lightIsOff
+        greenView.alpha = lightIsOff
     }
 
     @IBAction func colorChangeButtonDidTapped() {
@@ -42,16 +42,16 @@ class ViewController: UIViewController {
         
         switch currentLight {
         case .red:
-            redSection.alpha = lightIsOn
-            greenSection.alpha = lightIsOff
+            redView.alpha = lightIsOn
+            greenView.alpha = lightIsOff
             currentLight = .yellow
         case .yellow:
-            yellowSection.alpha = lightIsOn
-            redSection.alpha = lightIsOff
+            yellowView.alpha = lightIsOn
+            redView.alpha = lightIsOff
             currentLight = .green
         case .green:
-            greenSection.alpha = lightIsOn
-            yellowSection.alpha = lightIsOff
+            greenView.alpha = lightIsOn
+            yellowView.alpha = lightIsOff
             currentLight = .red
         }
     }

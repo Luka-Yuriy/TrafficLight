@@ -62,9 +62,9 @@
                     </view>
                     <connections>
                         <outlet property="colorChangeButton" destination="BLC-pu-jcQ" id="n7b-Mp-19X"/>
-                        <outlet property="greenSection" destination="9M3-gB-2yL" id="IY4-N4-yhg"/>
-                        <outlet property="redSection" destination="BpG-qV-d30" id="aMH-FN-d5X"/>
-                        <outlet property="yellowSection" destination="uWL-dK-SkY" id="OBV-cy-erS"/>
+                        <outlet property="greenView" destination="9M3-gB-2yL" id="IY4-N4-yhg"/>
+                        <outlet property="redView" destination="BpG-qV-d30" id="aMH-FN-d5X"/>
+                        <outlet property="yellowView" destination="uWL-dK-SkY" id="OBV-cy-erS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
